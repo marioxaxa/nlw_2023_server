@@ -1,8 +1,8 @@
 -- CreateTable
 CREATE TABLE "habits" (
     "id" TEXT NOT NULL PRIMARY KEY,
-    "title" TEXT,
-    "created_at" DATETIME
+    "title" TEXT NOT NULL,
+    "created_at" DATETIME NOT NULL
 );
 
 -- CreateTable

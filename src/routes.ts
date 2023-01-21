@@ -13,13 +13,22 @@ export async function AppRoutes(app: FastifyInstance) {
         })
         const {title, weekDays} = createHabitBody.parse(request.body)
 
+        const nomequalquer = prisma.habitWeekDays.create({
+            data:{week_day:2}
+        })
+
+
         await prisma.habit.create({
             data:{
-                
+                title,
+                creation_date: new Date(),
+                weekDays:[],
+                dayHabit:[]
 
-                
             }
         })
+
+
     })
 }
 
