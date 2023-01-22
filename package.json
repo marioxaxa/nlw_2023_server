@@ -12,7 +12,10 @@
   "dependencies": {
     "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.8.1",
-    "fastify": "^4.11.0"
+    "dayjs": "^1.11.7",
+    "db": "^3.4.0",
+    "fastify": "^4.11.0",
+    "push": "^0.1.1"
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^9.3.0",
